@@ -486,7 +486,7 @@ rpm -ivh gitlab-runner-10.5.0-1.x86_64.rpm
 Please enter the gitlab-ci coordinator URL <span class="token punctuation">(</span>e.g. https://gitlab.com <span class="token punctuation">)</span>
 http://gitlab.xxxx.com/
 
-<span class="token comment" spellcheck="true"># 你项目仓库的token，token可以在 Settings -&gt; CI/CD -&gt; Runners settings 中找到.</span>
+<span class="token comment" spellcheck="true"># 你项目仓库的token，token可以在 Settings -> CI/CD -> Runners settings 中找到.</span>
 Please enter the gitlab-ci token <span class="token keyword">for</span> this runner
 xxx
 
@@ -556,7 +556,7 @@ shell
     <span class="token punctuation">-</span> sh bin/shutdown.sh
     <span class="token punctuation">-</span> rm <span class="token punctuation">-</span>rf webapps/cidemo.war
     <span class="token punctuation">-</span> cp $CIDEMO_PACKAGE_DIR/cidemo.war $SERVER_HOME_DIR/webapps/cidemo.war
-    <span class="token punctuation">-</span> nohup sh ./bin/startup.sh <span class="token punctuation">&gt;</span> logs/cidemo_nohup.log 2<span class="token punctuation">&gt;</span><span class="token important">&amp;1</span> &amp;
+    <span class="token punctuation">-</span> nohup sh ./bin/startup.sh <span class="token punctuation">></span> logs/cidemo_nohup.log 2<span class="token punctuation">></span><span class="token important">&amp;1</span> &amp;
 
 <span class="token comment" spellcheck="true">###################### Sonar手动构建的job. #######################</span>
 
