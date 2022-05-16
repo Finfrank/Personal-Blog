@@ -101,7 +101,11 @@ blockquote {
 }
 
 pre {
-    padding: 2rem 1rem 1rem 3rem !important;
+    /* padding: 1.5rem !important; */
+    padding: 1.5rem 1.5rem 1.5rem 3.3rem !important;
+    margin: 1rem 0 !important;
+    background: #272822;
+    overflow: auto;
     border-radius: 0.35rem;
     tab-size: 4;
 }
@@ -122,9 +126,8 @@ pre {
 
 code {
     padding: 1px 5px;
-    top: 13px !important;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
-    font-size: 0.91rem;
+    /* font-size: 0.91rem; */
     color: #e96900;
     background-color: #f8f8f8;
     border-radius: 2px;
@@ -231,7 +234,7 @@ mark {
 }
 
 .card .card-image img {
-    border-radius: 8px 8px 0 0;
+    border-radius: 5px 5px 0 0;
     /* 修改文章列表图片填充样式为 cover 以覆盖整个区域而不会被缩放 */
     object-fit: cover;
 }
@@ -241,7 +244,8 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #0b0c0b 0%, #b4aeae 100%);
+    opacity: 0.8;
 }
 
 .text-color {
@@ -257,7 +261,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #070707 0%, #bcbebd 100%);
     opacity: 0.8;
 }
 
@@ -686,7 +690,7 @@ header .go-back i {
 }
 
 .index-card {
-    margin-top: -10px;
+    margin-top: -50px;
     padding-top: 20px;
 }
 
