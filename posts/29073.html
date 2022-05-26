@@ -32,10 +32,10 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css">
+<meta name="generator" content="Hexo 6.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -486,7 +486,7 @@ rpm -ivh gitlab-runner-10.5.0-1.x86_64.rpm
 Please enter the gitlab-ci coordinator URL <span class="token punctuation">(</span>e.g. https://gitlab.com <span class="token punctuation">)</span>
 http://gitlab.xxxx.com/
 
-<span class="token comment" spellcheck="true"># 你项目仓库的token，token可以在 Settings -&gt; CI/CD -&gt; Runners settings 中找到.</span>
+<span class="token comment" spellcheck="true"># 你项目仓库的token，token可以在 Settings -> CI/CD -> Runners settings 中找到.</span>
 Please enter the gitlab-ci token <span class="token keyword">for</span> this runner
 xxx
 
@@ -556,7 +556,7 @@ shell
     <span class="token punctuation">-</span> sh bin/shutdown.sh
     <span class="token punctuation">-</span> rm <span class="token punctuation">-</span>rf webapps/cidemo.war
     <span class="token punctuation">-</span> cp $CIDEMO_PACKAGE_DIR/cidemo.war $SERVER_HOME_DIR/webapps/cidemo.war
-    <span class="token punctuation">-</span> nohup sh ./bin/startup.sh <span class="token punctuation">&gt;</span> logs/cidemo_nohup.log 2<span class="token punctuation">&gt;</span><span class="token important">&amp;1</span> &amp;
+    <span class="token punctuation">-</span> nohup sh ./bin/startup.sh <span class="token punctuation">></span> logs/cidemo_nohup.log 2<span class="token punctuation">></span><span class="token important">&amp;1</span> &amp;
 
 <span class="token comment" spellcheck="true">###################### Sonar手动构建的job. #######################</span>
 
